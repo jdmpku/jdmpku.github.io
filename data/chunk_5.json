@@ -108,7 +108,8 @@
       "As a user, I want to track project progress so that I can monitor how the project is advancing against the plan.",
       "As a user, I want the website background to be light gray so that the interface is visually consistent with the design requirements.",
       "As a user, I want the UI elements to be dark red so that the website follows the specified color scheme."
-    ]
+    ],
+    "instruction": "Please develop a construction management website for managing projects and documents. The website should have functionalities for document management, project scheduling, communication tools, estimating job costing, time tracking, and resource management. Users should be able to create and manage projects, schedule project timelines, communicate with team members, estimate project costs, track project progress, and manage resources. Assign light gray to the background and dark red to the UI elements."
   },
   {
     "name": "Medical Journal Portal",
@@ -211,7 +212,8 @@
       "As a user, I want to update my profile information within the author's account so that my account details remain current.",
       "As a user, I want the website background color to be seashell so that the visual appearance is consistent and pleasant.",
       "As a user, I want components to use crimson so that the interface has a clear and defined design style."
-    ]
+    ],
+    "instruction": "Please implement a medical journal website for publishing medical articles and information. The website should have a user-friendly interface and responsive design, making it easy for users to browse and find information. The website should include a search function, allowing users to quickly find relevant articles and information, open articals, and download artical PDFs. Users can manage account by updating profile information within the author's account. Configure the background color to seashell, with components using crimson."
   },
   {
     "name": "Entertainment Directory Hub",
@@ -335,7 +337,8 @@
       "As a user, I want advertisers to be able to register accounts so that they can publish advertisements on the site.",
       "As a user, I want advertisers to be able to log in so that they can securely manage their ad content.",
       "As a user, I want advertisers to upload their ad content so that their advertisements can be displayed on the website."
-    ]
+    ],
+    "instruction": "Please implement an entertainment directory website to display band information and advertisements. The website should have band registration and login functionality, allowing band members to input their bio, provide picture links and audio sample links, and provide direct links to YouTube videos. Additionally, the website should allow advertisers to register, log in, and upload their ad content. Users should be able to browse band information, listen to audio samples, watch videos, and view advertisements. Implement floral white for the page background and dark goldenrod for the elements."
   },
   {
     "name": "Species BioInfo Database",
@@ -420,7 +423,8 @@
       "As a user, I want to search for specific biological information data so that I can quickly find the information I need.",
       "As a user, I want to filter biological information data based on different criteria so that I can narrow down the results to relevant data.",
       "As a user, I want the website to serve as a species biological information database so that I can view and manage biological information data in one place."
-    ]
+    ],
+    "instruction": "Please implement a species biological information database website for displaying and managing biological information data. The website should have functionalities for browsing, searching, and filtering. Users should be able to browse biological information data for different species, search for specific data, and filter data based on different criteria. Specify linen as the base color and maroon for all components."
   },
   {
     "name": "Startup Story Hub",
@@ -547,7 +551,8 @@
       "As a user, I want to view and manage my reading history so that I can revisit articles I have read before.",
       "As a user, I want the mini-program layout styled with an old lace background so that the visual appearance matches the specified design.",
       "As a user, I want the interface styled with rosy brown so that the mini-program maintains a consistent color theme."
-    ]
+    ],
+    "instruction": "Please implement a startup article publishing mini-program to display entrepreneurial experiences and stories. The mini-program should have functions for browsing articles, searching, collecting, and sharing. Users should be able to browse articles in different categories, search for articles of interest, collect favorite articles, and share articles on other platforms. The mini-program should also have user registration and login functions, allowing users to manage their collections and reading history. Style the layout with old lace in the background and rosy brown for the interface."
   },
   {
     "name": "Social Sharing Hub",
@@ -654,7 +659,8 @@
       "As a user, I want to have a personal homepage so that I have a dedicated space on the website.",
       "As a user, I want my personal homepage to display my user information so that others can learn more about me.",
       "As a user, I want my personal homepage to display my updates so that my friends can see my latest activity."
-    ]
+    ],
+    "instruction": "Please implement a social website for user registration, making friends, and sharing. The website should have a registration function, allowing users to create an account and log in. Users should be able to invite friends to join the website and vote on content. Users should be able to upload pictures and earn points. The website should have a personal homepage that displays user information and updates. Use light cyan as the default background and cadet blue for component styling."
   },
   {
     "name": "Smart Matrimonial Matchmaker",
@@ -773,7 +779,8 @@
       "As a user, I want to search for suitable partners based on different criteria so that I can find matches that meet my preferences.",
       "As a user, I want messaging functionality so that I can communicate with potential partners.",
       "As a user, I want chat functionality so that I can have real-time conversations with other users."
-    ]
+    ],
+    "instruction": "Please implement a smart matrimonial website for users to find partners. The website should have user registration and login functionality, allowing users to create profiles, including uploading photos and filling out personal information. The website should have advanced search and filtering options, enabling users to find suitable partners based on different criteria. The website should also have messaging and chat functionality, allowing users to communicate with each other. Design the site using lemon chiffon as the background and chocolate for content blocks."
   },
   {
     "name": "Skill Connect",
@@ -890,7 +897,8 @@
       "As a user, I want to search for other users based on their certifications so that I can find people with particular qualifications.",
       "As a user, I want the layout background to use a cornsilk color so that the platform has the specified visual style.",
       "As a user, I want interactive elements to use a peru color so that clickable or interactive parts of the interface follow the specified design."
-    ]
+    ],
+    "instruction": "Please implement a skill sharing platform for showcasing personal skills and connecting with others. The platform should allow users to create profiles, add skills and certifications, and search for other users based on their qualifications. Users should be able to browse other users' profiles, view their skills and certifications, and contact them. The platform should also have a search feature that allows users to find other users based on their skills and certifications. Apply cornsilk for the layout background and peru for interactive elements."
   },
   {
     "name": "World of Imagination",
@@ -996,7 +1004,8 @@
       "As a user, I want to share my own ideas via the share ideas form so that I can contribute my thoughts to the community.",
       "As a user, I want to participate in discussions so that I can talk about creative ideas with others.",
       "As a user, I want to interact with other users so that I can engage with the community around imagination-focused content."
-    ]
+    ],
+    "instruction": "Please implement a website called \"World of Imagination\" to showcase and inspire users' imagination. The website should have functionalities for showcasing user-created content, sharing ideas, discussing, and interacting. Users should be able to browse others' creative works, share their own ideas via the share ideas form, participate in discussions, and interact with other users. Choose azure mist for the background; set all component colors to dark slate blue."
   },
   {
     "name": "Wild Animal Spotter",
@@ -1091,7 +1100,8 @@
       "As a user, I want to set personalized alerts so that the notifications I receive match my preferences.",
       "As a user, I want the body background set to misty rose so that the website has the specified visual style.",
       "As a user, I want the UI to use firebrick so that the interface follows the required color scheme."
-    ]
+    ],
+    "instruction": "Please implement an animal spotter website that recognizes wild animals and sends SMS alerts. The website should have the functionality to identify different types of wild animals, and assign different color codes to each animal. Users should be able to set alert conditions, and when a specific animal is detected, the system will automatically send an SMS alert. Users should be able to browse detection records, view animal information, and set personalized alerts. Set misty rose as the body background and use firebrick for the UI."
   },
   {
     "name": "Ringtone & Wallpaper Hub",
@@ -1228,7 +1238,8 @@
       "As a user, I want the website to provide search functions so that I can quickly locate specific ringtones and wallpapers I need.",
       "As a user, I want all pages styled with a light goldenrod background so that the website has a consistent visual appearance.",
       "As a user, I want components styled in olive drab so that the interface elements have a coherent design."
-    ]
+    ],
+    "instruction": "Please implement a website for downloading ringtones and wallpapers, providing services for downloading ringtones and wallpapers. The website should have the functionality to download ringtones and wallpapers, allowing users to browse and search for ringtones and wallpapers, select and download the desired content, navigate to the user profile to view the download history, add ringtones to the collection for future reference, and categorize the contents by selecting a category from the menu. The website should also have categorization and search functions to help users quickly find the ringtones and wallpapers they need. Style all pages with a light goldenrod background and olive drab components."
   },
   {
     "name": "Travel Booking Portal",
@@ -1316,7 +1327,8 @@
       "As a user, I want the website to provide searching, booking, payment, and order management functionalities so that I can handle all my travel arrangements in one place.",
       "As a user, I want the website background layer to use peach puff so that the interface has a consistent visual style.",
       "As a user, I want the component layer to use indian red so that the interface elements have a clear and consistent appearance."
-    ]
+    ],
+    "instruction": "Please implement an online travel booking website for booking train tickets, air tickets, and hotels. The website should have functionalities for searching, booking, payment, and order management. Users should be able to search and book train tickets, air tickets, and hotels, make online payments, and view order status. Use peach puff in the background layer and indian red for the component layer."
   },
   {
     "name": "Europe Travel & Camping Explorer",
@@ -1424,7 +1436,8 @@
       "As a user, I want the website and web app to showcase campsites across Europe so that I can plan my camping trips within the continent.",
       "As a user, I want the website and web app to use a light pink main background so that the visual design is consistent with the specified style.",
       "As a user, I want the controls to use medium violet red so that the interactive elements are styled according to the specified design."
-    ]
+    ],
+    "instruction": "Please implement a travel and camping website and web app for Europe, showcasing tourist attractions and campsites across the continent. The website should have functionalities for searching, booking, and reviewing. Users should be able to browse tourist attractions and campsites in different countries and cities, book attractions and campsites of interest, and review the attractions and campsites they have visited. Establish light pink as the main background and medium violet red for the controls."
   },
   {
     "name": "Car Rental Booking Platform",
@@ -1522,7 +1535,8 @@
       "As a user, I want the platform to provide order management functionality so that I can manage my rental orders effectively.",
       "As a user, I want the platform background set to papaya whip so that the overall interface has the specified appearance.",
       "As a user, I want components styled with dark orange so that the platform’s components follow the specified color scheme."
-    ]
+    ],
+    "instruction": "Please implement a comprehensive car rental platform for booking car rental services. The platform should have a user-friendly interface, allowing users to easily browse and book car rental services. Users should be able to browse different types of cars, select rental dates and times, book selected cars, and view booking records. The platform should support multiple payment methods and provide order management functionality. Set the background to papaya whip, and apply dark orange to components."
   },
   {
     "name": "Travel Ticket Booking Platform",
@@ -1647,7 +1661,8 @@
       "As a user, I want the platform to have a responsive design so that it works well on both mobile and desktop devices.",
       "As a user, I want all backgrounds configured with a snow color so that the interface has a consistent minimalistic background.",
       "As a user, I want all components configured with a dim gray color so that the interface elements have a consistent minimalistic appearance."
-    ]
+    ],
+    "instruction": "Please implement a minimalistic bus and railway ticket booking platform where users can search and book bus and railway tickets, view real-time seat availability and prices, make secure payments, and receive booking confirmations via email or SMS. The platform should have user account management features, including user registration, login, booking history, and ticket printing options. Additionally, the platform should have a responsive design that adapts to both mobile and desktop devices. Configure all backgrounds with snow and all components with dim gray."
   },
   {
     "name": "Golf Travel Package Booker",
@@ -1787,7 +1802,8 @@
       "As a user, I want the website to manage suppliers involved in my trip so that hotels, flights, transport, and golf services are coordinated effectively.",
       "As a user, I want the website’s body background to use whitesmoke so that the overall appearance is visually consistent.",
       "As a user, I want the main components of the website to use dark cyan so that key sections are visually highlighted."
-    ]
+    ],
+    "instruction": "Please implement a golf travel package booking website that sells golf travel packages. The website should have functionalities for customer request handling, booking confirmation, online quotes, customer relationship management, and supplier management. Users can initiate requests through the website homepage form submission, and the system will collect information based on customer preferences and dynamically apply hotel, flight, transport, and golf conditions. Customers can confirm bookings online, and the system will generate digital vouchers and invoices. Assign whitesmoke to body backgrounds and dark cyan to main components."
   },
   {
     "name": "Travel Expense Reimbursement System",
@@ -1896,6 +1912,7 @@
       "As a user, I want to view reimbursement status so that I can track the progress of my reimbursement.",
       "As a user, I want the container backgrounds to be white so that the system interface is consistent with the design requirements.",
       "As a user, I want the component visuals to be navy so that the system interface matches the specified visual style."
-    ]
+    ],
+    "instruction": "Please implement a travel reimbursement and payment system for employee travel expenses. The system should have functionalities for booking tickets, hotels, and trains, generating settlements, submitting reimbursement applications, and more. Users should be able to book tickets, hotels, and trains, generate settlements report, submit reimbursement applications, and view reimbursement status. Use white for container backgrounds and navy for component visuals."
   }
 ]

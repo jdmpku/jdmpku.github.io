@@ -101,7 +101,8 @@
       "As a user, I want to monitor short message sending situations so that I can understand the status and performance of my sent messages.",
       "As a user, I want the platform to apply azure mist as the background so that the interface has a consistent visual theme.",
       "As a user, I want all components styled with dark slate blue so that the platform has a uniform and visually appealing design."
-    ]
+    ],
+    "instruction": "Please implement a short message service platform for sending and managing short messages. The platform should have functionalities for sending short messages, managing user information, configuring policies, and monitoring short message sending situations. Users should be able to send short messages, view short message sending records, configure sending policies, and monitor short message sending situations. Apply azure mist as the background; style all components with dark slate blue."
   },
   {
     "name": "Supply Chain Traceability Platform",
@@ -200,7 +201,8 @@
       "As a user, I want to verify the authenticity of products so that I can confirm their origin and legitimacy.",
       "As a user, I want to view data statistics about the supply chain so that I can understand its overall operation.",
       "As a user, I want to view data analysis results for the supply chain so that I can gain insights into how it is performing."
-    ]
+    ],
+    "instruction": "Please implement a supply chain traceability website for tracking and verifying the origin and circulation of products with the unique product IDs. The website should have functionalities for product registration, tracking, inquiry, and verification. Users should be able to register products, track the circulation path of products, query the current status of products, and verify the authenticity of products. The website should also have data statistics and analysis functions to help users understand the operation of the supply chain. Define the background as misty rose and components as firebrick."
   },
   {
     "name": "Paper Cup Manufacturing Manager",
@@ -355,7 +357,8 @@
       "As a user, I want to view sales statistics so that I can analyze overall sales performance.",
       "As a user, I want the system background to use a light goldenrod color so that the interface matches the specified design.",
       "As a user, I want the UI elements to use an olive drab color so that the interface components follow the required theme."
-    ]
+    ],
+    "instruction": "Please implement a paper cup manufacturing system to manage inventory, production, and sales of paper cups. The system should have functionalities for managing raw materials, finished products, inventory, production, and sales. Users should be able to record and track the inventory, usage, and sales of raw materials and finished products, and generate detailed reports. The system should also have customer management capabilities, including recording customer information, sales history, and sales statistics. Assign light goldenrod to the background and olive drab to the UI elements."
   },
   {
     "name": "Hospital Management Portal",
@@ -501,7 +504,8 @@
       "As a user, I want to manage theater operations so that surgical or procedure theaters are efficiently organized.",
       "As a user, I want the website background color configured to peach puff so that the overall interface matches the required theme.",
       "As a user, I want components to use indian red so that the interface components follow the specified color scheme."
-    ]
+    ],
+    "instruction": "Please implement a hospital management website for managing hospital finances, reports, inventory, and patient information. The website should have financial management functionality, including collecting patient fees and managing hospital finances. The reporting functionality should include inventory reports, patient reports, and financial reports. Employees should be able to submit daily reports to superiors, including detailed information about daily activities. Pharmacy management should include inventory management of medicines. Patient electronic files should include patient name, date of visit, diagnosis, and comments. The website should also have claim formulation, laboratory management, and theater management. Configure the background color to peach puff, with components using indian red."
   },
   {
     "name": "E-Government Integrated Management Platform",
@@ -633,7 +637,8 @@
       "As a user, I want the system to support circulation of forms and processes for leave, middle-level cadres leaving Shenzhen, attendance, and \"five powers\" management so that I can route them through the required steps.",
       "As a user, I want the page background to be light pink so that the system interface follows the required visual style.",
       "As a user, I want interface elements to be medium violet red so that the system elements are consistent with the specified design."
-    ]
+    ],
+    "instruction": "Please implement an e-government system for office management, infrastructure management, procurement management, personnel management, financial management, and decision-making management. The system should have functionalities for office management, infrastructure management, procurement management, personnel management, financial management, and decision-making management. Users should be able to browse related information, submit applications, approve, query status, and perform related operations. The system should also include functions such as leave, middle-level cadres leaving Shenzhen, attendance, and \"five powers\" management, which can design and circulate corresponding forms and processes. Implement light pink for the page background and medium violet red for the elements."
   },
   {
     "name": "Employee Attendance Tracker",
@@ -747,7 +752,8 @@
       "As an administrator, I want to perform analysis on attendance records so that I can gain insights into employee attendance.",
       "As a user, I want the system interface to use papaya whip as the base color so that the visual theme is consistent.",
       "As a user, I want all components to use dark orange so that the system’s elements have a unified appearance."
-    ]
+    ],
+    "instruction": "Please implement a time attendance system to record employee attendance. The system should have functionalities for employee clocking in and out, and viewing attendance records. Employees should be able to clock in and out, and view their own attendance records, including attendance time and absence time. Administrators should be able to view all employees' attendance records, perform statistics, and analysis. Specify papaya whip as the base color and dark orange for all components."
   },
   {
     "name": "Barber Shop Management System",
@@ -850,7 +856,8 @@
       "As a user, I want to send WhatsApp notifications so that I can notify clients.",
       "As a user, I want the layout styled with snow in the background so that the website has the requested visual theme.",
       "As a user, I want the interface to use dim gray so that the website matches the desired color scheme."
-    ]
+    ],
+    "instruction": "Please implement a barber shop management website for managing barbers and services. The website should have functionalities for adding barbers, services, and sending WhatsApp notifications. Users should be able to browse barbers and services, add new barbers and services, and send notifications to clients. Style the layout with snow in the background and dim gray for the interface."
   },
   {
     "name": "Women's Health Survey Portal",
@@ -955,7 +962,8 @@
       "As a user, I want the system to provide reporting functions so that my health data can be summarized and analyzed.",
       "As a user, I want the website to use whitesmoke as the default background so that the interface looks clean and consistent.",
       "As a user, I want the website to use dark cyan for component styling so that interactive elements are visually distinct."
-    ]
+    ],
+    "instruction": "Please implement a health survey website for women to fill out and submit health information. The website should have functionalities for filling out the survey, and submitting information. Users can fill out the relevant survey, and submit their information. The system will automatically collect the information and provide data management, permission management, data review, and reporting functions. Use whitesmoke as the default background and dark cyan for component styling."
   },
   {
     "name": "Driver Recruitment Portal",
@@ -1082,7 +1090,8 @@
       "As a user, I want to access a contact page so that I can find ways to reach the organization.",
       "As a user, I want the site designed with a white background so that the interface looks clean.",
       "As a user, I want content blocks in navy so that important sections are visually distinct."
-    ]
+    ],
+    "instruction": "Please implement a recruitment website for hiring drivers and posting job listings. The website should have functionalities for user registration, job posting, job application, and contact form. Users should be able to register and create profiles, apply for jobs, and manage their contact information. Clients should be able to view their active job postings. The website should include pages such as home, about us, clients, drivers, jobs, and contact. Design the site using white as the background and navy for content blocks."
   },
   {
     "name": "Blue-Collar Job Connector",
@@ -1207,7 +1216,8 @@
       "As a user, I want to view electrician job listings so that I can apply for electrical-related positions.",
       "As a user, I want the website to use an ivory layout background so that the visual design is consistent with the site’s theme.",
       "As a user, I want interactive elements to be forest green so that I can clearly distinguish clickable or interactive parts of the site."
-    ]
+    ],
+    "instruction": "Please implement a blue-collar job site that connects blue-collar workers with employers. The website should allow users to create profiles, including name, contact information, skills and qualifications, email address, and photos. Users can browse and search job listings, including construction workers, plumbers, electricians, and more. Apply ivory for the layout background and forest green for interactive elements."
   },
   {
     "name": "Internship Portal",
@@ -1315,7 +1325,8 @@
       "As a user, I want the website to be optimized for user experience so that using the portal feels smooth and intuitive.",
       "As a user, I want the website background to use mint cream so that the overall appearance is visually aligned with the design requirement.",
       "As a user, I want all component colors set to teal so that the interface has a consistent color scheme."
-    ]
+    ],
+    "instruction": "Please implement an internship portal website that connects students with companies offering internship opportunities. The website should have a student panel and a company panel, where students can browse and apply for internships, and companies can post internship positions. The website should also be optimized for speed, navigation, user interface, and user experience. Choose mint cream for the background; set all component colors to teal."
   },
   {
     "name": "Sports Talent Connect",
@@ -1409,7 +1420,8 @@
       "As a sports organization, I want to communicate with athletes so that I can discuss opportunities and recruitment details.",
       "As a user, I want the body background to be ghost white so that the platform has the specified visual style.",
       "As a user, I want the UI to use slate gray so that the interface follows the required color scheme."
-    ]
+    ],
+    "instruction": "Please implement a high-performance sports recruitment platform that connects athletes and sports organizations. The platform should have functionalities for athlete registration, job posting, job application, and message notification. Users should be able to log in, browse job listings, apply for jobs of interest, and receive relevant notifications. Sports organizations should be able to post jobs, and communicate with athletes. Set ghost white as the body background and use slate gray for the UI."
   },
   {
     "name": "Information Security Course Portal",
@@ -1554,7 +1566,8 @@
       "As a user, I want to fill out a contact form so that I can contact the institute with questions or requests.",
       "As a user, I want to view certification pathways so that I can understand the progression and requirements for obtaining certifications.",
       "As a user, I want all pages styled with a lavender background and indigo components so that the website has a consistent visual design."
-    ]
+    ],
+    "instruction": "Please implement a website for the Global Institute of Information Security to display courses and provide online enrollment functionality. The website should have functionalities such as course catalog, chatbot integration, contact form, and certification pathways. Users should be able to browse courses, view course details, enroll online, and contact the institute. Style all pages with a lavender background and indigo components."
   },
   {
     "name": "Data Science Learning Platform",
@@ -1636,7 +1649,8 @@
       "As a user, I want to learn course content so that I can gain data science knowledge using Python.",
       "As a user, I want to submit assignments so that I can complete the course requirements.",
       "As a user, I want to query my own learning grades so that I can understand my performance in the courses."
-    ]
+    ],
+    "instruction": "Please implement an online learning platform for data science that provides Python data science courses. The platform should have functionalities for browsing courses, learning courses, submitting assignments, and querying grades. Users should be able to browse and select Python data science courses of interest, learn course content, submit assignments, and query their own learning grades. Use honeydew in the background layer and dark olive green for the component layer."
   },
   {
     "name": "Student Training Match Portal",
@@ -1778,7 +1792,8 @@
       "As a training provider, I want to attract students to my skills development programs so that I can increase participation in my offerings.",
       "As a user, I want the website to use azure as the main background so that the visual design is consistent with the specified color scheme.",
       "As a user, I want the website controls to use midnight blue so that the interface follows the required design guidelines."
-    ]
+    ],
+    "instruction": "Please develop a student portal website for registration and management of student information. The website should have user registration and profile management features, allowing students to input and manage personal details, qualifications, and career preferences. The website should also have an advanced matching algorithm that matches students with training providers based on criteria such as qualifications, location, field of study, and career interests. Additionally, the website should streamline the application process with an intuitive interface, allowing students to easily apply for programs. Training providers should also be able to access student information based on predefined criteria to enable direct communication and attraction of students to their skills development programs. Establish azure as the main background and midnight blue for the controls."
   },
   {
     "name": "Personal Coaching Match",
@@ -1925,7 +1940,8 @@
       "As a user, I want to manage my coaching sessions so that I can view, update, or cancel my scheduled sessions.",
       "As a user, I want to set goals so that I have clear objectives for my coaching sessions.",
       "As a user, I want to track my progress toward goals so that I can see how I am improving over time."
-    ]
+    ],
+    "instruction": "Please implement a web application for one-to-one coaching sessions to match coaches and users. The application should have functionalities such as personality assessment, user profiles, coaching and mentorship matching, scheduling and session management, and goal setting and progress tracking. Users should be able to complete a personality assessment, create and manage their profiles, search for and select suitable coaches, schedule coaching sessions, and set and track goals. Set the background to beige, and apply saddle brown to components."
   },
   {
     "name": "Virtual Study Group Hub",
@@ -2019,7 +2035,8 @@
       "As a user, I want to view my personal information in a personal center so that I can review my profile details.",
       "As a user, I want the website backgrounds configured with alice blue so that the interface has a consistent background color.",
       "As a user, I want all components configured with steel blue so that the interface elements have a consistent component color."
-    ]
+    ],
+    "instruction": "Please implement a virtual study group website where users can create or join study groups, share resources, and collaborate on projects. The website should have functionalities for creating and joining groups, sharing resources, and collaborating on projects. Users should be able to join groups, download resources, and participate in project discussions. The website should also have a personal center where users can view their personal information. Configure all backgrounds with alice blue and all components with steel blue."
   },
   {
     "name": "Adult Vocabulary Learning Hub",
@@ -2147,7 +2164,8 @@
       "As a user, I want to access blog pages so that I can read additional content related to vocabulary learning.",
       "As a user, I want body backgrounds to be light gray so that the interface is easy on my eyes.",
       "As a user, I want main components to be dark red so that key interface elements are visually distinct."
-    ]
+    ],
+    "instruction": "Please implement an adult vocabulary learning website that includes a variety of quizzes and word games, such as crossword puzzles, unjumble letters, finding synonyms and antonyms, flashcards, and fill-in-the-blank. The website should have a dashboard that displays a progress summary. A set of 10 new words should be taught every week, and users should be able to choose an avatar and play a simple game while waiting in the waiting room. The website should include a home page, 5 activity pages, a dashboard, and blog pages. Assign light gray to body backgrounds and dark red to main components."
   },
   {
     "name": "Kids Recycling Adventure",
@@ -2253,7 +2271,8 @@
       "As a user, I want to receive rewards and recognition through the game so that I feel encouraged to keep playing and improving.",
       "As a user, I want the container backgrounds to use a seashell color so that the visual design of the containers is consistent and appealing.",
       "As a user, I want the component visuals to use a crimson color so that the visual elements of the game are clearly styled."
-    ]
+    ],
+    "instruction": "Please develop a children's recycling game website to educate kids on proper waste recycling. The game should include competitive elements such as a leaderboard to keep kids engaged and motivated. The game should use a cartoon-style visual design to make it visually appealing to children. Kids should be able to play the game, receive feedback, learn how to correctly sort waste into the corresponding containers, and receive rewards and recognition through the game. Use seashell for container backgrounds and crimson for component visuals."
   },
   {
     "name": "DMV Practice Test Website",
@@ -2358,7 +2377,8 @@
       "As a user, I want to view error analysis so that I can understand which questions I got wrong and why.",
       "As a user, I want the page background to be floral white so that the interface matches the specified design.",
       "As a user, I want all components colored dark goldenrod so that the website maintains a consistent visual style."
-    ]
+    ],
+    "instruction": "Please implement a DMV practice test website to help users practice for their driver's license exam. The website should have features such as a practice question bank, simulated exams, and error analysis. Users should be able to select practice questions, take simulated exams, and view error analysis and exam scores. Set page background to floral white; color all components with dark goldenrod."
   },
   {
     "name": "Canadian Nutrition Label Assistant",
@@ -2446,6 +2466,7 @@
       "As a user, I want to design my own food packaging so that it complies with Canadian regulations.",
       "As a user, I want the website background to be linen so that the visual appearance matches the specified design.",
       "As a user, I want components to be defined with maroon so that the interface follows the specified color scheme."
-    ]
+    ],
+    "instruction": "Please implement a website that displays Canadian nutrition facts labels to help users understand food nutrition information. The website should have a product search function, where users can input food names or keywords (such as apple) to search for related nutrition information. The website should also have a nutrition analysis function, where users can input food ingredients (such as chicken, rice, broccoli) and serving sizes to calculate their nutritional value. Additionally, the website should provide a packaging design function, where users can design their own food packaging according to Canadian regulations. Define background as linen; define components with maroon."
   }
 ]

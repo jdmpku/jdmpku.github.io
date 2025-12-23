@@ -69,6 +69,7 @@ function loadDataItem() {
     currentData = currentChunk[index];
     
     // Populate fields
+    document.getElementById('instructionField').value = currentData.instruction || '';
     document.getElementById('nameField').value = currentData.name || '';
     document.getElementById('initialReqField').value = currentData.initial_requirements || '';
     
@@ -174,6 +175,11 @@ function saveCurrentItem() {
         alert('请先选择一条数据');
         return;
     }
+    
+    // Update instruction/name/initial requirements
+    currentData.instruction = document.getElementById('instructionField').value.trim();
+    currentData.name = document.getElementById('nameField').value.trim();
+    currentData.initial_requirements = document.getElementById('initialReqField').value.trim();
     
     // Update URL from text field
     const urlText = document.getElementById('urlField').value.trim();

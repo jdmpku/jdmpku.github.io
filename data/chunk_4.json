@@ -104,7 +104,8 @@
       "As an administrator, I want to manage ad spaces in the backend management system so that I can control the advertisements displayed on the website.",
       "As a user, I want the website to use an old lace background so that the visual styling matches the intended design.",
       "As a user, I want components styled in rosy brown so that the interface has a consistent look and feel."
-    ]
+    ],
+    "instruction": "Please implement a news blog website for the shipping industry to publish news and company information. The website should have sections for news, company profiles, and events. Users should be able to browse news, company information, and events, and subscribe to newsletters. The website should have a backend management system that allows administrators to manage ad spaces. Implement styling with old lace for the background and rosy brown for components."
   },
   {
     "name": "Agriculture Info Portal",
@@ -212,7 +213,8 @@
       "As a user, I want to use filters so that I can narrow down agricultural information based on my preferences.",
       "As a user, I want the website to use a light cyan background so that the visual theme is consistent with the specified design.",
       "As a user, I want the website elements to use cadet blue so that the interface follows the required color scheme."
-    ]
+    ],
+    "instruction": "Please implement an agriculture-related website for displaying and managing agricultural information. The website should have functionalities for browsing agricultural news, viewing farm product information, and checking weather forecasts. Users should be able to browse agricultural-related news, view different types of farm product information, check local weather forecasts, and perform searches and filters. Apply theme using light cyan as background and cadet blue for elements."
   },
   {
     "name": "Real-Time Culinary Guide",
@@ -320,7 +322,8 @@
       "As a user, I want to add my own ratings so that I can contribute my evaluation of restaurants or recipes.",
       "As a user, I want the application background colored in lemon chiffon so that the interface has the specified appearance.",
       "As a user, I want the component styles set to chocolate so that the visual elements match the desired design."
-    ]
+    ],
+    "instruction": "Please implement a real-time culinary guide application to display restaurant and recipe information. The application should have functionalities for browsing restaurants, searching recipes, viewing reviews and ratings, and more. Users should be able to browse nearby restaurants, search for specific recipes, view other users' reviews and ratings, and add their own reviews and ratings. Color the background using lemon chiffon and set component styles to chocolate."
   },
   {
     "name": "Family Memorial Portal",
@@ -444,7 +447,8 @@
       "As a user, I want to view statistical analysis related to obituaries and funeral arrangements so that I can understand trends and insights.",
       "As a user, I want the website layout to use cornsilk for the outer layout so that the portal has a consistent visual theme.",
       "As a user, I want UI blocks to use peru as their color so that the interface elements are visually distinct within the layout."
-    ]
+    ],
+    "instruction": "Please implement a family event portal website for publishing and storing obituaries, funeral arrangements, and multimedia memories. The website should have functionalities for obituary publishing, mortuary list, condolences, and statistics. Users should be able to publish and manage their own obituaries and funeral arrangements, view and leave messages on others' obituaries, and view statistical analysis. Use cornsilk for the outer layout and peru for UI blocks."
   },
   {
     "name": "Environmental Warning System",
@@ -542,7 +546,8 @@
       "As a user, I want to browse current gas sensor data so that I can see detailed information about detected gases.",
       "As a user, I want the primary background of the website to be azure mist so that the interface has a consistent visual style.",
       "As a user, I want the website elements to use dark slate blue so that the design is visually coherent and readable."
-    ]
+    ],
+    "instruction": "Please implement an environmental warning system website to display real-time weather and air quality data. The website should have a real-time update function, displaying the air quality index (AQI) for the past two weeks, and allowing users to compare pollution and air quality changes. Users should be able to browse current weather and air quality data, including temperature, humidity, and gas sensor data. Set primary background to azure mist and elements to dark slate blue."
   },
   {
     "name": "Healthy Living Blog",
@@ -650,7 +655,8 @@
       "As a user, I want the website to support categorizing functionality so that articles are organized by category.",
       "As a user, I want the website to use misty rose for the global background so that the overall look is consistent with the design choice.",
       "As a user, I want the website to use firebrick for all components so that the interface has a unified component color scheme."
-    ]
+    ],
+    "instruction": "Please implement a health blog website for publishing health-related articles and promoting healthy lifestyles. The website should have functionalities for publishing articles, commenting, searching, and categorizing. Users should be able to browse and search articles, post comments, and follow specific topics. Choose misty rose for global background and firebrick for all components."
   },
   {
     "name": "Poetry Sharing Blog",
@@ -750,7 +756,8 @@
       "As a user, I want to browse different types of poetry so that I can explore various poetry categories.",
       "As a user, I want the website layout to use light goldenrod so that I experience the intended visual style.",
       "As a user, I want buttons and cards to use olive drab so that the interactive elements have a consistent design."
-    ]
+    ],
+    "instruction": "Please implement a poetry blog website for displaying and sharing poetry content. The website should have functionalities for browsing poetry, searching poetry, posting poetry, and commenting on poetry. Users should be able to browse different types of poetry, search for specific poetry, post their own poetry, and comment on others' poetry. Apply light goldenrod for layout; use olive drab for buttons and cards."
   },
   {
     "name": "Designer Portfolio Showcase",
@@ -832,7 +839,8 @@
       "As a user, I want the website to showcase works about the designer so that I can see examples of their design.",
       "As a user, I want the website theme to use peach puff as the background color so that the visual style matches the intended design.",
       "As a user, I want the website components to use indian red as the component color so that the interface elements have a consistent appearance."
-    ]
+    ],
+    "instruction": "Please implement a personal portfolio website to showcase design works. The website should have functionalities for showcasing works about the designer, and contact information. Users should be able to browse the designer's portfolio, learn about the designer's background and experience, and get in touch with the designer through contact information. Configure your theme with peach puff as background and indian red as component color."
   },
   {
     "name": "Online CV Showcase",
@@ -916,7 +924,8 @@
       "As a user, I want to view personal projects so that I can see the individual's showcased work.",
       "As a user, I want the website to use a light pink background so that the overall appearance matches the specified style.",
       "As a user, I want the UI components to apply medium violet red so that the interface follows the specified color scheme."
-    ]
+    ],
+    "instruction": "Please create a comprehensive CV website to display personal information and work experience. The website should have functionalities for displaying personal information, work experience, skills, education background, and projects. Users should be able to browse the CV, view work experience, understand skills and education background, and showcase personal projects. Use a light pink background and apply medium violet red to the UI components."
   },
   {
     "name": "Personal Link Tree Manager",
@@ -1004,7 +1013,8 @@
       "As a user, I want to share my link tree with others through a shareable link so that people can easily access all my links in one place.",
       "As a user, I want the overall background of the website to be papaya whip so that the interface has a consistent visual style.",
       "As a user, I want the components styled with dark orange so that the website elements visually stand out against the background."
-    ]
+    ],
+    "instruction": "Please implement a link tree website for displaying and managing links. The website should have functionalities for adding, editing, and deleting links. Users should be able to create and manage their own link tree, including adding new links, editing existing links, deleting unnecessary links, and sharing their link tree with others through link tree's shareable link. Set overall background to papaya whip, then style components with dark orange."
   },
   {
     "name": "Biography Showcase",
@@ -1111,7 +1121,8 @@
       "As a user, I want to use a search function on the website so that I can quickly find relevant information.",
       "As a user, I want the website to have a snow background color so that the visual appearance matches the specified design.",
       "As a user, I want all elements on the website to be dim gray so that the interface maintains a consistent color scheme."
-    ]
+    ],
+    "instruction": "Please create a biography website to display a person's life and achievements. The website should have functionalities to display basic information, life experiences, achievements, and honors. Users should be able to browse biographies, view detailed information, and search for related content. The website should have a search function, allowing users to quickly find relevant information. Assign snow as the background color and apply dim gray to all elements."
   },
   {
     "name": "Team Portfolio Showcase",
@@ -1189,7 +1200,8 @@
       "As a user, I want to view the team's contact information so that I can contact the team.",
       "As a user, I want the webpage background color initialized with whitesmoke so that the overall page appearance is consistent.",
       "As a user, I want the component color initialized with dark cyan so that the components have a distinct and cohesive style."
-    ]
+    ],
+    "instruction": "Please implement a webpage to showcase team projects and skills, including team introduction, project showcase, skill showcase, and contact information. Users should be able to browse team information, view project cases, understand team skills, and contact the team through the contact information. Initialize the background color with whitesmoke and component color with dark cyan."
   },
   {
     "name": "Fitness Tracker Mini Program",
@@ -1309,7 +1321,8 @@
       "As a user, I want to write a fitness diary so that I can document my fitness journey and experiences.",
       "As a user, I want to track my own fitness data so that I can monitor changes and improvements over time.",
       "As a user, I want a fitness statistics homepage so that I can see an overview of my fitness data at a glance."
-    ]
+    ],
+    "instruction": "Please implement a fitness tracking mini-program for users to record and manage their fitness activities. The mini-program should have functionalities such as a fitness leaderboard, exercise recording, fitness diary, and a fitness statistics homepage. Users should be able to browse and record their own exercises, view the leaderboard, write a fitness diary, and track their own fitness data. Apply white to the canvas background and navy to all visible components."
   },
   {
     "name": "Engineer Tool Info Hub",
@@ -1456,7 +1469,8 @@
       "As a user, I want to rate tools so that I can express my level of satisfaction with them.",
       "As a user, I want the website to use ivory as the global background color so that the overall background is consistent.",
       "As a user, I want all UI pieces to use forest green so that the interface elements have a consistent color scheme."
-    ]
+    ],
+    "instruction": "Please implement a website that provides tool information for engineers. The website should have user registration and login functionality, and be able to display information about various tools, including tool name, description, function, price, etc. Users should be able to search and filter tools, view detailed tool information, and be able to comment and rate tools. Declare ivory as the global background color and forest green for all UI pieces."
   },
   {
     "name": "Online Calculation Portal",
@@ -1526,7 +1540,8 @@
       "As a user, I want to view the calculation results so that I can see the outcome of my computations.",
       "As a user, I want the screen background to use mint cream so that the website has the specified visual appearance.",
       "As a user, I want component highlights to use teal so that key interface elements are visually distinguished as specified."
-    ]
+    ],
+    "instruction": "Please implement a computing task website for performing calculations. The website should have functionalities for inputting mathematical expressions, executing calculations, and displaying results. Users should be able to input mathematical expressions, select the calculation type (e.g., \"Basic Arithmetic\"), execute the calculation, and view the calculation results. Use mint cream as the screen background and teal for component highlights."
   },
   {
     "name": "Online Diagram Maker",
@@ -1629,7 +1644,8 @@
       "As a user, I want to use a drag-and-drop interface to arrange diagram elements so that I can position components intuitively.",
       "As a user, I want the diagram layout background to be ghost white so that the workspace has a consistent, modern look.",
       "As a user, I want component details to be displayed in slate gray so that the diagram elements have a clear and consistent visual style."
-    ]
+    ],
+    "instruction": "Please implement a modern diagram maker website for creating and editing diagrams. The website should have functionalities for creating new diagrams, editing existing diagrams, adding and removing diagram elements, and adjusting layout and style. Users should be able to choose from different diagram types, such as flowcharts, organizational charts, and mind maps, and use a drag-and-drop interface to add and arrange diagram elements. Select ghost white for layout background and slate gray for component details."
   },
   {
     "name": "Smart To-Do Manager",
@@ -1724,7 +1740,8 @@
       "As a user, I want to browse all to-do items so that I can view my entire list of tasks.",
       "As a user, I want all pages to have a lavender background so that the application has a consistent visual style.",
       "As a user, I want the components to be indigo so that the interface elements visually stand out against the background."
-    ]
+    ],
+    "instruction": "Please implement an advanced to-do list web application where users can create, edit, and delete to-do items. The application should have functionalities for adding new tasks, marking tasks as completed, deleting tasks, filtering tasks, and searching tasks. Users should be able to browse all to-do items, create new tasks, edit existing tasks, and delete unnecessary tasks. Set all pages to have a lavender background and indigo components."
   },
   {
     "name": "Cross-Platform HTML Editor",
@@ -1882,7 +1899,8 @@
       "As a user, I want access to a basic user guide so that I can learn how to use the editor’s features.",
       "As a user, I want the background color set to honeydew so that the editor interface is visually consistent as specified.",
       "As a user, I want the component color set to dark olive green so that the editor components follow the required color scheme."
-    ]
+    ],
+    "instruction": "Please implement a cross-platform HTML editor with live preview and code editing functionality. The editor should allow users to switch between HTML code and text editing modes and automatically convert to HTML. The editor should have project management capabilities, allowing users to organize multiple HTML documents, images, and other files. The editor should also have features such as syntax highlighting, saving template pages, and a basic user guide. Set the background color to honeydew and the component color to dark olive green."
   },
   {
     "name": "Food Distribution Portal",
@@ -1984,7 +2002,8 @@
       "As a user, I want the website to support volunteer management functionality so that volunteers can be organized and coordinated.",
       "As a user, I want the website to use an azure background so that the interface has a consistent visual style.",
       "As a user, I want the website components to use midnight blue so that the elements are visually distinct and cohesive."
-    ]
+    ],
+    "instruction": "Please implement a food distribution website for managing and distributing food. The website should have functionalities for food donation, food distribution, and volunteer management. Users should be able to browse food donation information, apply for food distribution, view volunteer information, and manage their own accounts. Use azure for the background and midnight blue for components."
   },
   {
     "name": "Detective Case Manager",
@@ -2109,7 +2128,8 @@
       "As a user, I want the app to provide a service assignment sheet so that service assignments are clearly documented.",
       "As a user, I want the app to use beige as the background so that the interface matches the specified design.",
       "As a user, I want all components styled with saddle brown so that the app has a consistent visual theme."
-    ]
+    ],
+    "instruction": "Please implement a detective agency case management app for managing cases and tracking work hours. The app should have functionalities for real-time reporting, data collection and storage, work hours tracking, estimated expense sheet generation, and service assignment sheet. Users should be able to browse case information, submit real-time reports, log work hours, and view estimated expense sheets and service assignment sheets. Apply beige as the background; style all components with saddle brown."
   },
   {
     "name": "Risk Assessment Portal",
@@ -2228,6 +2248,7 @@
       "As a user, I want a subscription feature so that I can access the risk assessment tool.",
       "As a user, I want the website background defined as alice blue so that the interface has a consistent background color.",
       "As a user, I want the website components defined as steel blue so that the interface elements have a consistent component color."
-    ]
+    ],
+    "instruction": "Please implement a risk assessment website for conducting risk assessments and generating reports. The website should have functionalities for selecting risk assessment items, auto-populating data, generating charts, and creating reports. Users should be able to select risk assessment items, and the website will automatically fill in relevant data from a background database, generate charts, and create reports. The website should also have a subscription feature, allowing users to access the risk assessment tool. Define the background as alice blue and components as steel blue."
   }
 ]
