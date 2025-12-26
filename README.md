@@ -38,28 +38,7 @@ Human_Check_Website/
    python3 dataset_construction/split_data.py
    ```
 
-2. **启动本地服务器**（重要：由于浏览器安全策略，不能直接双击打开 HTML 文件）：
-   
-   **方法 1：使用 Python（推荐）**
-   ```bash
-   cd /Users/dongming/Desktop/Human_Check_Website
-   python3 -m http.server 8000
-   ```
-   然后在浏览器中访问：`http://localhost:8000`
-   
-   **方法 2：使用 Node.js**
-   ```bash
-   npx http-server -p 8000
-   ```
-   然后在浏览器中访问：`http://localhost:8000`
-   
-   **方法 3：使用启动脚本**
-   ```bash
-   chmod +x start_server.sh
-   ./start_server.sh
-   ```
-
-3. 或者部署到 GitHub Pages（无需本地服务器）
+2. 在浏览器中打开 `index.html` 或部署到 GitHub Pages
 
 3. 选择要检查的 Chunk
 

@@ -38,12 +38,25 @@
                 
                 <div class="field-group">
                     <label for="initialReqField">Initial Requirements:</label>
-                    <textarea id="initialReqField" class="form-control" rows="3" placeholder="Initial requirements"></textarea>
+                    <textarea id="initialReqField" class="form-control" rows="3" placeholder="Initial requirements（当前为空）"></textarea>
                 </div>
                 
                 <div class="field-group">
-                    <label for="urlField">URL (User Stories):</label>
-                    <textarea id="urlField" class="form-control" rows="8" placeholder="每行一个用户故事"></textarea>
+                    <label>URL (User Stories):</label>
+                    <div class="table-container">
+                        <table id="urlTable" class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>用户故事</th>
+                                    <th>操作</th>
+                                </tr>
+                            </thead>
+                            <tbody id="urlTableBody">
+                                <!-- Rows will be added here -->
+                            </tbody>
+                        </table>
+                    </div>
+                    <button class="btn btn-add" onclick="addUrlStory()">+ 添加用户故事</button>
                 </div>
                 
                 <div class="field-group">
@@ -74,6 +87,22 @@
         </main>
     </div>
     
+    <!-- Modal for editing URL story -->
+    <div id="urlEditModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeUrlEditModal()">&times;</span>
+            <h2>编辑用户故事</h2>
+            <div class="field-group">
+                <label for="modalUrlStory">用户故事:</label>
+                <textarea id="modalUrlStory" class="form-control" rows="4" placeholder="输入用户故事"></textarea>
+            </div>
+            <div class="modal-actions">
+                <button class="btn btn-primary" onclick="saveUrlStory()">保存</button>
+                <button class="btn btn-secondary" onclick="closeUrlEditModal()">取消</button>
+            </div>
+        </div>
+    </div>
+    
     <!-- Modal for editing implicit requirement -->
     <div id="editModal" class="modal">
         <div class="modal-content">
@@ -81,7 +110,14 @@
             <h2>编辑隐式需求</h2>
             <div class="field-group">
                 <label for="modalAspect">Aspect:</label>
-                <input type="text" id="modalAspect" class="form-control">
+                <select id="modalAspect" class="form-control" onchange="handleAspectChange()">
+                    <option value="">请选择...</option>
+                    <option value="Interaction">Interaction</option>
+                    <option value="Content">Content</option>
+                    <option value="Style">Style</option>
+                    <option value="__custom__">自定义</option>
+                </select>
+                <input type="text" id="modalAspectCustom" class="form-control" style="display: none; margin-top: 8px;" placeholder="输入自定义 Aspect">
             </div>
             <div class="field-group">
                 <label for="modalRequirementText">Requirement Text:</label>

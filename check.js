@@ -2,6 +2,7 @@ let currentChunk = null;
 let currentData = null;
 let currentIndex = -1;
 let editingImplicitIndex = -1;
+let editingUrlIndex = -1;
 
 // Get chunk ID from URL
 const urlParams = new URLSearchParams(window.location.search);
@@ -68,16 +69,22 @@ function loadDataItem() {
     currentIndex = index;
     currentData = currentChunk[index];
     
+    // 确保数据结构存在
+    if (!currentData) {
+        alert('数据项不存在');
+        return;
+    }
+    
     // Populate fields
     document.getElementById('instructionField').value = currentData.instruction || '';
     document.getElementById('nameField').value = currentData.name || '';
-    document.getElementById('initialReqField').value = currentData.initial_requirements || '';
     
-    // URL field - convert array to text
-    const urlText = Array.isArray(currentData.URL) 
-        ? currentData.URL.join('\n') 
-        : (currentData.URL || '');
-    document.getElementById('urlField').value = urlText;
+    // Initial Requirements - 处理空字符串
+    const initialReq = currentData.initial_requirements || '';
+    document.getElementById('initialReqField').value = initialReq;
+    
+    // Load URL stories
+    loadUrlStories();
     
     // Load implicit requirements
     loadImplicitRequirements();
@@ -85,11 +92,120 @@ function loadDataItem() {
     document.getElementById('dataEditor').style.display = 'block';
 }
 
+function loadUrlStories() {
+    const tbody = document.getElementById('urlTableBody');
+    tbody.innerHTML = '';
+    
+    // 确保 URL 存在且为数组
+    if (!currentData.URL) {
+        currentData.URL = [];
+    }
+    
+    const urlStories = Array.isArray(currentData.URL) 
+        ? currentData.URL 
+        : [];
+    
+    if (urlStories.length === 0) {
+        // 显示空状态提示
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td colspan="2" style="text-align: center; color: #999; padding: 20px;">
+                当前没有用户故事，点击下方按钮添加
+            </td>
+        `;
+        tbody.appendChild(row);
+        return;
+    }
+    
+    urlStories.forEach((story, index) => {
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td class="cell-content">${escapeHtml(story || '')}</td>
+            <td>
+                <button class="btn btn-edit" onclick="editUrlStory(${index})">编辑</button>
+                <button class="btn btn-danger" onclick="deleteUrlStory(${index})">删除</button>
+            </td>
+        `;
+        tbody.appendChild(row);
+    });
+}
+
+function addUrlStory() {
+    editingUrlIndex = -1;
+    document.getElementById('modalUrlStory').value = '';
+    document.getElementById('urlEditModal').style.display = 'block';
+}
+
+function editUrlStory(index) {
+    editingUrlIndex = index;
+    const story = currentData.URL[index];
+    document.getElementById('modalUrlStory').value = story || '';
+    document.getElementById('urlEditModal').style.display = 'block';
+}
+
+function saveUrlStory() {
+    const story = document.getElementById('modalUrlStory').value.trim();
+    
+    if (!story) {
+        alert('用户故事不能为空');
+        return;
+    }
+    
+    // 确保 URL 是数组
+    if (!Array.isArray(currentData.URL)) {
+        currentData.URL = [];
+    }
+    
+    if (editingUrlIndex >= 0) {
+        // Edit existing
+        currentData.URL[editingUrlIndex] = story;
+    } else {
+        // Add new
+        currentData.URL.push(story);
+    }
+    
+    currentChunk[currentIndex] = currentData;
+    loadUrlStories();
+    closeUrlEditModal();
+}
+
+function deleteUrlStory(index) {
+    if (confirm('确定要删除这条用户故事吗？')) {
+        currentData.URL.splice(index, 1);
+        currentChunk[currentIndex] = currentData;
+        loadUrlStories();
+    }
+}
+
+function closeUrlEditModal() {
+    document.getElementById('urlEditModal').style.display = 'none';
+    editingUrlIndex = -1;
+}
+
 function loadImplicitRequirements() {
     const tbody = document.getElementById('implicitTableBody');
     tbody.innerHTML = '';
     
-    const implicitReqs = currentData['Implicit Requirements'] || [];
+    // 确保 Implicit Requirements 存在且为数组
+    if (!currentData['Implicit Requirements']) {
+        currentData['Implicit Requirements'] = [];
+    }
+    
+    const implicitReqs = Array.isArray(currentData['Implicit Requirements']) 
+        ? currentData['Implicit Requirements'] 
+        : [];
+    
+    if (implicitReqs.length === 0) {
+        // 显示空状态提示
+        const row = document.createElement('tr');
+        row.innerHTML = `
+            <td colspan="4" style="text-align: center; color: #999; padding: 20px;">
+                当前没有隐式需求，点击下方按钮添加
+            </td>
+        `;
+        tbody.appendChild(row);
+        return;
+    }
     
     implicitReqs.forEach((req, index) => {
         const row = document.createElement('tr');
@@ -106,9 +222,25 @@ function loadImplicitRequirements() {
     });
 }
 
+function handleAspectChange() {
+    const select = document.getElementById('modalAspect');
+    const customInput = document.getElementById('modalAspectCustom');
+    
+    if (select.value === '__custom__') {
+        customInput.style.display = 'block';
+        customInput.value = '';
+        customInput.focus();
+    } else {
+        customInput.style.display = 'none';
+        customInput.value = '';
+    }
+}
+
 function addImplicitRequirement() {
     editingImplicitIndex = -1;
     document.getElementById('modalAspect').value = '';
+    document.getElementById('modalAspectCustom').value = '';
+    document.getElementById('modalAspectCustom').style.display = 'none';
     document.getElementById('modalRequirementText').value = '';
     document.getElementById('modalCorrespondingStory').value = '';
     document.getElementById('editModal').style.display = 'block';
@@ -117,21 +249,54 @@ function addImplicitRequirement() {
 function editImplicitRequirement(index) {
     editingImplicitIndex = index;
     const req = currentData['Implicit Requirements'][index];
+    const aspect = req.Aspect || '';
     
-    document.getElementById('modalAspect').value = req.Aspect || '';
+    // 检查 Aspect 是否在预设选项中
+    const presetAspects = ['Interaction', 'Content', 'Style'];
+    const aspectSelect = document.getElementById('modalAspect');
+    const aspectCustom = document.getElementById('modalAspectCustom');
+    
+    if (presetAspects.includes(aspect)) {
+        aspectSelect.value = aspect;
+        aspectCustom.style.display = 'none';
+        aspectCustom.value = '';
+    } else if (aspect) {
+        // 自定义值
+        aspectSelect.value = '__custom__';
+        aspectCustom.style.display = 'block';
+        aspectCustom.value = aspect;
+    } else {
+        aspectSelect.value = '';
+        aspectCustom.style.display = 'none';
+        aspectCustom.value = '';
+    }
+    
     document.getElementById('modalRequirementText').value = req.RequirementText || '';
     document.getElementById('modalCorrespondingStory').value = req['Corresponding User Story'] || '';
     document.getElementById('editModal').style.display = 'block';
 }
 
 function saveImplicitRequirement() {
-    const aspect = document.getElementById('modalAspect').value.trim();
+    const aspectSelect = document.getElementById('modalAspect');
+    const aspectCustom = document.getElementById('modalAspectCustom');
     const requirementText = document.getElementById('modalRequirementText').value.trim();
     const correspondingStory = document.getElementById('modalCorrespondingStory').value.trim();
     
     if (!requirementText) {
         alert('Requirement Text 不能为空');
         return;
+    }
+    
+    // 获取 Aspect 值
+    let aspect = '';
+    if (aspectSelect.value === '__custom__') {
+        aspect = aspectCustom.value.trim();
+        if (!aspect) {
+            alert('请输入自定义 Aspect 值');
+            return;
+        }
+    } else if (aspectSelect.value) {
+        aspect = aspectSelect.value;
     }
     
     const newReq = {
@@ -168,6 +333,10 @@ function deleteImplicitRequirement(index) {
 function closeEditModal() {
     document.getElementById('editModal').style.display = 'none';
     editingImplicitIndex = -1;
+    // 重置表单
+    document.getElementById('modalAspect').value = '';
+    document.getElementById('modalAspectCustom').value = '';
+    document.getElementById('modalAspectCustom').style.display = 'none';
 }
 
 function saveCurrentItem() {
@@ -179,11 +348,20 @@ function saveCurrentItem() {
     // Update instruction/name/initial requirements
     currentData.instruction = document.getElementById('instructionField').value.trim();
     currentData.name = document.getElementById('nameField').value.trim();
-    currentData.initial_requirements = document.getElementById('initialReqField').value.trim();
     
-    // Update URL from text field
-    const urlText = document.getElementById('urlField').value.trim();
-    currentData.URL = urlText ? urlText.split('\n').filter(line => line.trim()) : [];
+    // Initial Requirements - 保存为空字符串（如果为空）
+    const initialReqValue = document.getElementById('initialReqField').value.trim();
+    currentData.initial_requirements = initialReqValue || '';
+    
+    // 确保 URL 是数组（已经在表格中管理，这里只是确保格式）
+    if (!Array.isArray(currentData.URL)) {
+        currentData.URL = [];
+    }
+    
+    // 确保 Implicit Requirements 是数组
+    if (!Array.isArray(currentData['Implicit Requirements'])) {
+        currentData['Implicit Requirements'] = [];
+    }
     
     // Update current chunk
     currentChunk[currentIndex] = currentData;
@@ -228,9 +406,13 @@ function escapeHtml(text) {
 
 // Close modal when clicking outside
 window.onclick = function(event) {
-    const modal = document.getElementById('editModal');
-    if (event.target === modal) {
+    const editModal = document.getElementById('editModal');
+    const urlEditModal = document.getElementById('urlEditModal');
+    if (event.target === editModal) {
         closeEditModal();
+    }
+    if (event.target === urlEditModal) {
+        closeUrlEditModal();
     }
 }
 
